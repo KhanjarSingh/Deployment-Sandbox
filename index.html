@@ -3,28 +3,356 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deployment Sandbox | Stellar</title>
+    <title>Nexus Dashboard</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="background">
-        <div class="blob blob-1"></div>
-        <div class="blob blob-2"></div>
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <span class="logo-icon">⬡</span>
+            <span class="logo-text">Nexus</span>
+        </div>
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-item active" id="nav-dashboard">
+                <span class="nav-icon">▦</span>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-analytics">
+                <span class="nav-icon">◈</span>
+                <span>Analytics</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-users">
+                <span class="nav-icon">◉</span>
+                <span>Users</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-revenue">
+                <span class="nav-icon">◆</span>
+                <span>Revenue</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-reports">
+                <span class="nav-icon">◧</span>
+                <span>Reports</span>
+            </a>
+            <a href="#" class="nav-item" id="nav-settings">
+                <span class="nav-icon">✦</span>
+                <span>Settings</span>
+            </a>
+        </nav>
+        <div class="sidebar-user">
+            <div class="user-avatar">PT</div>
+            <div class="user-info">
+                <div class="user-name">Parth T.</div>
+                <div class="user-role">Administrator</div>
+            </div>
+            <span class="user-status"></span>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="topbar-left">
+                <h2 class="page-title">Dashboard</h2>
+                <span class="page-subtitle">Welcome back, Parth 👋</span>
+            </div>
+            <div class="topbar-right">
+                <div class="search-bar">
+                    <span>🔍</span>
+                    <input type="text" placeholder="Search anything...">
+                </div>
+                <div class="notif-bell">
+                    🔔
+                    <span class="notif-badge">3</span>
+                </div>
+                <div class="topbar-avatar">PT</div>
+            </div>
+        </header>
+
+        <!-- KPI Cards -->
+        <section class="kpi-grid">
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span class="kpi-label">Total Revenue</span>
+                    <span class="kpi-icon kpi-icon--green">💰</span>
+                </div>
+                <div class="kpi-value">$84,254</div>
+                <div class="kpi-change positive">▲ 12.4% vs last month</div>
+                <div class="kpi-sparkline">
+                    <div class="sparkline-bar" style="height:40%"></div>
+                    <div class="sparkline-bar" style="height:55%"></div>
+                    <div class="sparkline-bar" style="height:48%"></div>
+                    <div class="sparkline-bar" style="height:62%"></div>
+                    <div class="sparkline-bar" style="height:58%"></div>
+                    <div class="sparkline-bar" style="height:75%"></div>
+                    <div class="sparkline-bar active" style="height:90%"></div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span class="kpi-label">Active Users</span>
+                    <span class="kpi-icon kpi-icon--purple">👥</span>
+                </div>
+                <div class="kpi-value">12,892</div>
+                <div class="kpi-change positive">▲ 8.1% vs last month</div>
+                <div class="kpi-sparkline">
+                    <div class="sparkline-bar" style="height:50%"></div>
+                    <div class="sparkline-bar" style="height:60%"></div>
+                    <div class="sparkline-bar" style="height:55%"></div>
+                    <div class="sparkline-bar" style="height:70%"></div>
+                    <div class="sparkline-bar" style="height:65%"></div>
+                    <div class="sparkline-bar" style="height:80%"></div>
+                    <div class="sparkline-bar active" style="height:95%"></div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span class="kpi-label">New Orders</span>
+                    <span class="kpi-icon kpi-icon--blue">📦</span>
+                </div>
+                <div class="kpi-value">3,481</div>
+                <div class="kpi-change negative">▼ 2.3% vs last month</div>
+                <div class="kpi-sparkline">
+                    <div class="sparkline-bar" style="height:80%"></div>
+                    <div class="sparkline-bar" style="height:70%"></div>
+                    <div class="sparkline-bar" style="height:75%"></div>
+                    <div class="sparkline-bar" style="height:65%"></div>
+                    <div class="sparkline-bar" style="height:72%"></div>
+                    <div class="sparkline-bar" style="height:68%"></div>
+                    <div class="sparkline-bar active" style="height:60%"></div>
+                </div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-header">
+                    <span class="kpi-label">Conversion Rate</span>
+                    <span class="kpi-icon kpi-icon--orange">📈</span>
+                </div>
+                <div class="kpi-value">6.78%</div>
+                <div class="kpi-change positive">▲ 1.2% vs last month</div>
+                <div class="kpi-sparkline">
+                    <div class="sparkline-bar" style="height:45%"></div>
+                    <div class="sparkline-bar" style="height:50%"></div>
+                    <div class="sparkline-bar" style="height:55%"></div>
+                    <div class="sparkline-bar" style="height:60%"></div>
+                    <div class="sparkline-bar" style="height:65%"></div>
+                    <div class="sparkline-bar" style="height:70%"></div>
+                    <div class="sparkline-bar active" style="height:78%"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Charts & Activity Row -->
+        <section class="charts-row">
+            <!-- Revenue Chart -->
+            <div class="chart-card chart-card--wide">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Revenue Overview</div>
+                        <div class="card-subtitle">Monthly performance for 2025</div>
+                    </div>
+                    <div class="card-actions">
+                        <button class="pill active">Monthly</button>
+                        <button class="pill">Quarterly</button>
+                        <button class="pill">Yearly</button>
+                    </div>
+                </div>
+                <div class="bar-chart">
+                    <div class="bar-chart-inner">
+                        <div class="bar-group"><div class="bar" style="height:55%" data-val="$42k"></div><span>Jan</span></div>
+                        <div class="bar-group"><div class="bar" style="height:40%" data-val="$31k"></div><span>Feb</span></div>
+                        <div class="bar-group"><div class="bar" style="height:70%" data-val="$54k"></div><span>Mar</span></div>
+                        <div class="bar-group"><div class="bar" style="height:62%" data-val="$48k"></div><span>Apr</span></div>
+                        <div class="bar-group"><div class="bar" style="height:80%" data-val="$62k"></div><span>May</span></div>
+                        <div class="bar-group"><div class="bar" style="height:75%" data-val="$58k"></div><span>Jun</span></div>
+                        <div class="bar-group"><div class="bar" style="height:88%" data-val="$68k"></div><span>Jul</span></div>
+                        <div class="bar-group"><div class="bar" style="height:95%" data-val="$74k"></div><span>Aug</span></div>
+                        <div class="bar-group"><div class="bar" style="height:78%" data-val="$60k"></div><span>Sep</span></div>
+                        <div class="bar-group"><div class="bar" style="height:65%" data-val="$50k"></div><span>Oct</span></div>
+                        <div class="bar-group"><div class="bar highlight" style="height:100%" data-val="$84k"></div><span>Nov</span></div>
+                        <div class="bar-group"><div class="bar" style="height:45%" data-val="$35k"></div><span>Dec</span></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Donut Chart -->
+            <div class="chart-card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Traffic Sources</div>
+                        <div class="card-subtitle">Current month</div>
+                    </div>
+                </div>
+                <div class="donut-chart-wrapper">
+                    <div class="donut-chart">
+                        <svg viewBox="0 0 120 120">
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="#1e2235" stroke-width="18"/>
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="#5a32fa" stroke-width="18"
+                                stroke-dasharray="113 169" stroke-dashoffset="0" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="#ff4f7b" stroke-width="18"
+                                stroke-dasharray="68 214" stroke-dashoffset="-113" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="#ffc542" stroke-width="18"
+                                stroke-dasharray="50 232" stroke-dashoffset="-181" stroke-linecap="round"/>
+                            <circle cx="60" cy="60" r="45" fill="none" stroke="#3ecf8e" stroke-width="18"
+                                stroke-dasharray="51 231" stroke-dashoffset="-231" stroke-linecap="round"/>
+                            <text x="60" y="57" text-anchor="middle" fill="#fff" font-size="11" font-family="Outfit" font-weight="600">Total</text>
+                            <text x="60" y="70" text-anchor="middle" fill="#a0a5b5" font-size="8" font-family="Outfit">Sessions</text>
+                        </svg>
+                    </div>
+                    <div class="donut-legend">
+                        <div class="legend-item"><span class="dot dot--purple"></span>Organic Search <strong>40%</strong></div>
+                        <div class="legend-item"><span class="dot dot--pink"></span>Direct <strong>24%</strong></div>
+                        <div class="legend-item"><span class="dot dot--yellow"></span>Referral <strong>18%</strong></div>
+                        <div class="legend-item"><span class="dot dot--green"></span>Social <strong>18%</strong></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Table & Activity Row -->
+        <section class="bottom-row">
+            <!-- Recent Transactions -->
+            <div class="table-card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Recent Transactions</div>
+                        <div class="card-subtitle">Last 5 entries</div>
+                    </div>
+                    <a href="#" class="view-all">View all →</a>
+                </div>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><div class="customer"><div class="cust-avatar" style="background:#5a32fa20;color:#8a6cff">AR</div>Aarav Rao</div></td>
+                            <td>Mar 16, 2026</td>
+                            <td class="amount">$1,240</td>
+                            <td><span class="badge badge--green">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td><div class="customer"><div class="cust-avatar" style="background:#ff4f7b20;color:#ff4f7b">SM</div>Shreya Mehta</div></td>
+                            <td>Mar 15, 2026</td>
+                            <td class="amount">$880</td>
+                            <td><span class="badge badge--yellow">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td><div class="customer"><div class="cust-avatar" style="background:#3ecf8e20;color:#3ecf8e">RK</div>Rohit Kumar</div></td>
+                            <td>Mar 14, 2026</td>
+                            <td class="amount">$2,150</td>
+                            <td><span class="badge badge--green">Paid</span></td>
+                        </tr>
+                        <tr>
+                            <td><div class="customer"><div class="cust-avatar" style="background:#ffc54220;color:#ffc542">PD</div>Priya D.</div></td>
+                            <td>Mar 13, 2026</td>
+                            <td class="amount">$390</td>
+                            <td><span class="badge badge--red">Failed</span></td>
+                        </tr>
+                        <tr>
+                            <td><div class="customer"><div class="cust-avatar" style="background:#5a32fa20;color:#8a6cff">NK</div>Nikhil K.</div></td>
+                            <td>Mar 12, 2026</td>
+                            <td class="amount">$3,020</td>
+                            <td><span class="badge badge--green">Paid</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Activity Feed -->
+            <div class="activity-card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Activity Feed</div>
+                        <div class="card-subtitle">Real-time updates</div>
+                    </div>
+                </div>
+                <div class="activity-list">
+                    <div class="activity-item">
+                        <div class="activity-dot green"></div>
+                        <div class="activity-text">
+                            <strong>New user registered</strong>
+                            <span>Karan Shah joined the platform</span>
+                            <time>2 min ago</time>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot purple"></div>
+                        <div class="activity-text">
+                            <strong>Order #3481 placed</strong>
+                            <span>Enterprise plan subscription</span>
+                            <time>18 min ago</time>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot yellow"></div>
+                        <div class="activity-text">
+                            <strong>Payment pending</strong>
+                            <span>Invoice #INV-0284 overdue</span>
+                            <time>1 hr ago</time>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot red"></div>
+                        <div class="activity-text">
+                            <strong>Server alert</strong>
+                            <span>CPU usage spiked to 92%</span>
+                            <time>3 hrs ago</time>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot green"></div>
+                        <div class="activity-text">
+                            <strong>Deployment successful</strong>
+                            <span>v2.4.1 pushed to production</span>
+                            <time>5 hrs ago</time>
+                        </div>
+                    </div>
+                    <div class="activity-item">
+                        <div class="activity-dot purple"></div>
+                        <div class="activity-text">
+                            <strong>Report generated</strong>
+                            <span>Monthly analytics PDF ready</span>
+                            <time>Yesterday</time>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
-    
-    <main class="glass-card">
-        <div class="logo">🚀</div>
-        <h1>Deployment Ready</h1>
-        <p>This is a stunningly simple sandbox designed to test your server deployments. If you can see this, you are good to go!</p>
-        <button class="cta-button" onclick="alert('Houston, we have liftoff! 🌟')">Test Interaction</button>
-    </main>
 
     <script>
-        // Simple script to test JS functionality
-        console.log("Stellar sandbox initialized successfully!");
+        // Nav active state
+        document.querySelectorAll('.nav-item').forEach(item => {
+            item.addEventListener('click', e => {
+                e.preventDefault();
+                document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+                item.classList.add('active');
+            });
+        });
+
+        // Pill toggle
+        document.querySelectorAll('.pill').forEach(pill => {
+            pill.addEventListener('click', () => {
+                pill.closest('.card-actions').querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+            });
+        });
+
+        // Bar tooltip on hover
+        document.querySelectorAll('.bar').forEach(bar => {
+            bar.addEventListener('mousemove', e => {
+                bar.setAttribute('title', bar.dataset.val);
+            });
+        });
     </script>
 </body>
 </html>
